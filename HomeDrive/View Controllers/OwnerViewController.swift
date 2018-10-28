@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class OwnerViewController: UIViewController, UITableViewDataSource, UISearchBarDelegate {
 
+    var ref: DatabaseReference!
     @IBOutlet weak var tableView: UITableView!
     
     var bookings: [[String: Any]] = [];
