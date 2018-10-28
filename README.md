@@ -22,7 +22,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Roadblocks
 
-
 ## License
 © 2018 Avenue
 
