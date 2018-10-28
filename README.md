@@ -1,31 +1,50 @@
 # *HomeDrive*
 
-**Objective** HomeDrive is an iOS application that helps to alleviate parking conditions in New York City. One of the main frustrations of drivers is finding parking space. Avenue solves this through crowdsourcing parking spaces, by allowing homeowners to rent out their garages/driveways to drivers.
+**Objective** HomeDrive is an iOS application that connects drivers in need of parking spaces to homeowners willing to rent out their garage/driveway.
+
+**Motive** A daily frustration of New York drivers is having difficulty finding parking spaces.
 
 ## Video Walkthrough
-m
-
-Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/cvZdBqp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Functionalities
-- [ ] Configure Firebase server
-- [ ] Set up FirebaseUI authentication
-- [ ] Implement google maps functionality
-- [ ] Implement list view and map view
-- [ ] Implement communication channel between Owners-Drivers
+## Stand-ups
+**Core** functionalities:
+- [x] (Team Collab 101) Google Drive, Git branches, Slack channel, Role designation
+- [x] (UX) Wireframes, User flows
+- [x] (UI) ViewController - Storyboard setup
+- [x] (Backend) Open-Authentication
+  - [x] Google log-in
+  - [ ] Facebook log-in
+  - [ ] E-mail log-in
+- [x] (Backend) Configure Google Cloud server
+- [x] (Backend) Setup Firebase database tables
+- [x] (Backend) Integrate Google Maps API; GPS functionality
+- [x] (Backend) Integrate booking requests; Match drivers with owners
+
+**Stretch** functionalities:
+- [x] (Backend) GPS reroutes from user's location to garage after booking confirmation
+- [ ] (AI) Implement voice assistant
+- [ ] (UX) Implement profile reviews
+
 
 ## Useful Links
+- [Team Channel](https://hackattackqc2018.slack.com/messages/CDQ6F7HAR/)
+- [Firebase Documentation](https://firebase.google.com/docs/guides/?authuser=0)
+- [Git merging](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [Devpost](https://hackattack2018.devpost.com/)
 
 
 ## Roadblocks
+- Learning version control together as a team (Constantly merging 6 branches)
+- Initial configuration of Cloud server
+- Deprecated Cocoapods dependency installations
 
 
 ## License
-© 2018 Avenue
+© 2018 HomeDrive
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
