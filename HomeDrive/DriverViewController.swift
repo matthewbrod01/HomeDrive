@@ -46,10 +46,10 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
         locationManager.stopUpdatingLocation()
     }
     
-    func addMaker(coordinate: CLLocationCoordinate2D) {
+    func addMaker(coordinate: CLLocationCoordinate2D, title: String) {
         //let position = CLLocationCoordinate2D(latitude: 10, longitude: 10)
         let marker = GMSMarker(position: coordinate)
-        marker.title = "Hello World"
+        marker.title = title
         marker.map = mapView
     }
     
