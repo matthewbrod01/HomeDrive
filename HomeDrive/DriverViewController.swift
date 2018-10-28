@@ -55,6 +55,7 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
         //let position = CLLocationCoordinate2D(latitude: 10, longitude: 10)
         let marker = GMSMarker(position: coordinate)
         marker.title = title
+        marker.icon = UIImage(named: "parking")
         marker.map = mapView
     }
     
@@ -66,6 +67,7 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let coordinate = placemarks.first!.location!
                     let marker = GMSMarker(position: coordinate.coordinate)
                     marker.title = title
+                    marker.icon = UIImage(named: "parking")
                     marker.map = self.mapView
                 }
             }
