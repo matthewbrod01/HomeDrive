@@ -9,25 +9,42 @@
 import UIKit
 import GoogleMaps
 
-class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var tableView: UITableView!
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        
         tableView.dataSource = self
         tableView.delegate = self
         
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        mapView = GMSMapView.map(withFrame: mapView.frame, camera: camera)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
+        let userLocation = locations.last
+        print("userlocation: \(userLocation)")
+        let center = CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude, longitude: userLocation!.coordinate.longitude)
+        print("center: \(center)")
+        let camera = GMSCameraPosition.camera(withLatitude: center.latitude, longitude: center.longitude, zoom: 15)
+        
+        mapView.camera = camera
+        mapView.isMyLocationEnabled = true
+        mapView.animate(to: camera)
+        let marker = GMSMarker(position: center)
+        
         marker.map = mapView
+        
+        marker.title = "Current Location"
+        locationManager.stopUpdatingLocation()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
