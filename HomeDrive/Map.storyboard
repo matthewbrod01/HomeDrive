@@ -45,8 +45,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiw-hK-t7Y">
-                                                    <rect key="frame" x="100" y="45" width="66.5" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiw-hK-t7Y">
+                                                    <rect key="frame" x="100" y="45" width="66.5" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -58,13 +58,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiV-TB-H8W">
-                                                    <rect key="frame" x="100" y="72" width="41" height="22"/>
+                                                    <rect key="frame" x="100" y="71.5" width="41" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="iiw-hK-t7Y" secondAttribute="trailing" constant="5" id="2bt-VC-mtd"/>
                                                 <constraint firstItem="Y5m-yh-jaV" firstAttribute="top" secondItem="nE7-jp-MX3" secondAttribute="topMargin" constant="5" id="36p-4k-4OJ"/>
                                                 <constraint firstItem="u52-ta-sNh" firstAttribute="top" secondItem="nE7-jp-MX3" secondAttribute="topMargin" constant="5" id="Bog-LU-EQs"/>
                                                 <constraint firstItem="cXL-WL-ltI" firstAttribute="top" secondItem="nE7-jp-MX3" secondAttribute="topMargin" constant="5" id="DWz-OD-6Ge"/>
@@ -190,7 +191,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Book Spot"/>
                                 <connections>
-                                    <segue destination="VR2-sU-6zB" kind="presentation" id="edM-C8-tHa"/>
+                                    <segue destination="VR2-sU-6zB" kind="presentation" identifier="gotoroute" id="edM-C8-tHa"/>
                                 </connections>
                             </button>
                         </subviews>

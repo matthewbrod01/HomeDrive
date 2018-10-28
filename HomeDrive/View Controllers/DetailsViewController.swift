@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class DetailsViewController: UIViewController {
     
@@ -18,21 +19,25 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var garageLabel: UILabel!
+    var owner: [String: Any] = [:]
+    var currentLocation: CLLocationCoordinate2D?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameLabel.text = owner["name"] as? String
+        addressLabel.text = owner["address"] as? String
+        garageLabel.text = owner["garagetype"] as? String
+        
     }
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotoroute" {
+            let destinationVC = segue.destination as! RouteViewController
+            destinationVC.owner = owner
+            destinationVC.currentLocation = currentLocation
+        }
+    }
     
 }

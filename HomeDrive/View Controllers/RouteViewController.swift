@@ -12,21 +12,27 @@ import GoogleMaps
 class RouteViewController: UIViewController {
     
     @IBOutlet weak var mapView: GMSMapView!
+    var owner: [String: Any] = [:]
+    var currentLocation: CLLocationCoordinate2D?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let lat = currentLocation?.latitude
+        let long = currentLocation?.longitude
         
-        let camera = GMSCameraPosition.camera(withLatitude: 40.737170, longitude: -73.824980, zoom: 15)
+        let ownerLat = owner["latitude"] as? Double
+        let ownerLong = owner["longitude"] as? Double
+        let camera = GMSCameraPosition.camera(withLatitude: lat!, longitude: long!, zoom: 15)
         mapView.camera = camera
         
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 40.737170, longitude: -73.824980)
+        marker.position = CLLocationCoordinate2D(latitude: lat!, longitude: long!)
         marker.title = "location1"
         marker.map = mapView
         
         let marker1 = GMSMarker()
-        marker1.position = CLLocationCoordinate2D(latitude: 40.676690, longitude: -73.777720)
+        marker1.position = CLLocationCoordinate2D(latitude: ownerLat!, longitude: ownerLong!)
         marker1.title = "location2"
         marker1.map = mapView
         
@@ -35,8 +41,14 @@ class RouteViewController: UIViewController {
     
     
     func drawPath() {
-        let origin = CLLocationCoordinate2D(latitude: 40.737170, longitude: -73.824980)
-        let destination = CLLocationCoordinate2D(latitude: 40.676690, longitude: -73.777720)
+        let lat = currentLocation?.latitude
+        let long = currentLocation?.longitude
+        
+        let ownerLat = owner["latitude"] as? Double
+        let ownerLong = owner["longitude"] as? Double
+        
+        let origin = CLLocationCoordinate2D(latitude: lat!, longitude: long!)
+        let destination = CLLocationCoordinate2D(latitude: ownerLat!, longitude: ownerLong!)
         
         guard let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin.latitude),\(origin.longitude)&destination=\(destination.latitude),\(destination.longitude)&mode=driving&key=AIzaSyBc3hRaxJ4vFVlpL5ot153TyJg9jgVT0MM") else {
             return
