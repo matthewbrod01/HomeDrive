@@ -1,6 +1,6 @@
-# *Avenue*
+# *HomeDrive*
 
-**Objective** Avenue is an iOS application that helps to alleviate parking conditions in New York City. One of the main frustrations of drivers is finding parking space. Avenue solves this through crowdsourcing parking spaces, by allowing homeowners to rent out their garages/driveways to drivers.
+**Objective** HomeDrive is an iOS application that helps to alleviate parking conditions in New York City. One of the main frustrations of drivers is finding parking space. Avenue solves this through crowdsourcing parking spaces, by allowing homeowners to rent out their garages/driveways to drivers.
 
 ## Video Walkthrough
 
