@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             } else {
                 // User is signed in
                 // ...
-                let storyboard = UIStoryboard(name: "UserType", bundle: nil)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let chatViewController = storyboard.instantiateViewController(withIdentifier: "NavController")
                 self.window?.rootViewController = chatViewController
             }
