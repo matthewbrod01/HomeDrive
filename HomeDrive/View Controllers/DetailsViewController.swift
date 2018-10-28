@@ -29,6 +29,8 @@ class DetailsViewController: UIViewController {
         addressLabel.text = owner["address"] as? String
         garageLabel.text = owner["garagetype"] as? String
         
+        
+        
     }
     
     

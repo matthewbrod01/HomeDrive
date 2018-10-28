@@ -53,11 +53,11 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     
                     if bookingObject != nil {
                         self.tableArray.append(bookingObject!)
-                        self.addAnnotationAtAddress(address: bookingObject!["address"] as! String, title: "title")
+                        //self.addAnnotationAtAddress(address: bookingObject!["address"] as! String, title: "title")
                     }
                     //self.bookings.append((bookingObject ?? nil)!)
                     
-                    self.tableView.reloadData()
+                    //self.tableView.reloadData()
                 }
                 
                 //reloading the tableview
