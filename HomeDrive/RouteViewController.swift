@@ -51,7 +51,6 @@ class RouteViewController: UIViewController {
                 print(error.localizedDescription)
             } else if let data = data {
                 let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
-                print("json: \(json)")
                 let routes = json["routes"] as! NSArray
                 
                 OperationQueue.main.addOperation {
