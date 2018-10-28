@@ -30,21 +30,41 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let userLocation = locations.last
-        print("userlocation: \(userLocation)")
+        let userLocation = locations.first
+        
         let center = CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude, longitude: userLocation!.coordinate.longitude)
-        print("center: \(center)")
         let camera = GMSCameraPosition.camera(withLatitude: center.latitude, longitude: center.longitude, zoom: 15)
         
         mapView.camera = camera
         mapView.isMyLocationEnabled = true
-        mapView.animate(to: camera)
+    
         let marker = GMSMarker(position: center)
         
         marker.map = mapView
         
         marker.title = "Current Location"
         locationManager.stopUpdatingLocation()
+    }
+    
+    func addMaker(coordinate: CLLocationCoordinate2D) {
+        //let position = CLLocationCoordinate2D(latitude: 10, longitude: 10)
+        let marker = GMSMarker(position: coordinate)
+        marker.title = "Hello World"
+        marker.map = mapView
+    }
+    
+    func addAnnotationAtAddress(address: String, title: String) {
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(address) { (placemarks, error) in
+            if let placemarks = placemarks {
+                if placemarks.count != 0 {
+                    let coordinate = placemarks.first!.location!
+                    let marker = GMSMarker(position: coordinate.coordinate)
+                    marker.title = title
+                    marker.map = self.mapView
+                }
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
