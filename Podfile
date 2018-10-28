@@ -12,4 +12,6 @@ target 'HomeDrive' do
 	pod 'FirebaseUI/Auth'
 	pod 'FirebaseUI/Google'
 	pod 'FirebaseUI/Facebook'
+	pod 'GoogleMaps'
+  	pod 'GooglePlaces'
 end
