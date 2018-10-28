@@ -6,7 +6,7 @@
 
 ## Video Walkthrough
 
-<img src='https://i.imgur.com/cvZdBqp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Walkthru](DemoHack2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
