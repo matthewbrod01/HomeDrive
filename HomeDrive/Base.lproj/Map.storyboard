@@ -88,7 +88,7 @@
                                             <outlet property="nameLabel" destination="G68-2h-3mg" id="ZfI-aQ-Bln"/>
                                             <outlet property="parkingImageView" destination="ikS-Kh-dLy" id="C1k-HR-n1O"/>
                                             <outlet property="priceLabel" destination="Gfw-i9-LEf" id="g3G-6p-Gb0"/>
-                                            <segue destination="YzG-TL-b6R" kind="show" id="s2N-KT-3cg"/>
+                                            <segue destination="YzG-TL-b6R" kind="show" identifier="gotodetails" id="s2N-KT-3cg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -171,6 +171,9 @@
                                 <rect key="frame" x="131.5" y="593.5" width="112" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Book Spot"/>
+                                <connections>
+                                    <segue destination="Upg-ro-JlK" kind="presentation" modalTransitionStyle="flipHorizontal" id="dRS-Sy-1kW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,6 +221,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EO6-PA-gqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2024.8" y="26.53673163418291"/>
+        </scene>
+        <!--Route View Controller-->
+        <scene sceneID="zIJ-27-IKB">
+            <objects>
+                <viewController id="Upg-ro-JlK" customClass="RouteViewController" customModule="HomeDrive" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="We8-8P-gic" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K7K-fp-Jx9"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="We8-8P-gic" id="vDz-jb-ZIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZi-Qw-NVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3089" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AJc-hI-ejn">

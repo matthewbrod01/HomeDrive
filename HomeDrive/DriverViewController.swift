@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
+class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate, GMSMapViewDelegate {
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var tableView: UITableView!
@@ -37,6 +37,7 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         mapView.camera = camera
         mapView.isMyLocationEnabled = true
+        mapView.delegate = self
     
         let marker = GMSMarker(position: center)
         
@@ -44,6 +45,10 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         marker.title = "Current Location"
         locationManager.stopUpdatingLocation()
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        performSegue(withIdentifier: "gotodetails", sender: self)
     }
     
     func addMaker(coordinate: CLLocationCoordinate2D, title: String) {
@@ -77,14 +82,10 @@ class DriverViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "gotodetails" {
+            let destinationVC = segue.destination as! DetailsViewController
+        }
     }
-    */
 
 }

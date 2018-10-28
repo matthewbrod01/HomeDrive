@@ -12,7 +12,6 @@ class DetailsViewController: UIViewController {
 
     
     @IBOutlet weak var parkingImageView: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -23,7 +22,6 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
