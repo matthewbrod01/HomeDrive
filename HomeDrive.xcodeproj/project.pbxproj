@@ -7,26 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C439DB218569FD00AE1F6D /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C439DA218569FD00AE1F6D /* BookingCell.swift */; };
+		21C439DE21856A8700AE1F6D /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C439DD21856A8700AE1F6D /* OwnerViewController.swift */; };
 		3406BDA821853CD900B69AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406BDA721853CD900B69AA8 /* AppDelegate.swift */; };
 		3406BDAA21853CD900B69AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406BDA921853CD900B69AA8 /* ViewController.swift */; };
-		3406BDAD21853CD900B69AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406BDAB21853CD900B69AA8 /* Main.storyboard */; };
+		3406BDAD21853CD900B69AA8 /* Owner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406BDAB21853CD900B69AA8 /* Owner.storyboard */; };
+		0D1E78C821854DA200BAC0DE /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1E78C721854DA200BAC0DE /* DriverViewController.swift */; };
+		0D1E78CC2185536400BAC0DE /* ParkingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1E78CB2185536400BAC0DE /* ParkingCell.swift */; };
+		3406BDA821853CD900B69AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406BDA721853CD900B69AA8 /* AppDelegate.swift */; };
+		3406BDAD21853CD900B69AA8 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406BDAB21853CD900B69AA8 /* Map.storyboard */; };
 		3406BDAF21853CDA00B69AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3406BDAE21853CDA00B69AA8 /* Assets.xcassets */; };
 		3406BDB221853CDA00B69AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406BDB021853CDA00B69AA8 /* LaunchScreen.storyboard */; };
 		3406BDBA2185407400B69AA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3406BDB92185407400B69AA8 /* GoogleService-Info.plist */; };
 		61EBB58B2A6A6B3F515BBA0B /* Pods_HomeDrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BA9FBDF98252DB4CFA10C5 /* Pods_HomeDrive.framework */; };
+		AA78AB682185786B0074FA11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA78AB672185786B0074FA11 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1E78C721854DA200BAC0DE /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		0D1E78CB2185536400BAC0DE /* ParkingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingCell.swift; sourceTree = "<group>"; };
 		129BFEEE93F28F745A3494AE /* Pods-HomeDrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeDrive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeDrive/Pods-HomeDrive.debug.xcconfig"; sourceTree = "<group>"; };
+		21C439DA218569FD00AE1F6D /* BookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCell.swift; sourceTree = "<group>"; };
+		21C439DD21856A8700AE1F6D /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
+		21C439DF21856ADE00AE1F6D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3406BDA421853CD800B69AA8 /* HomeDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406BDA721853CD900B69AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3406BDA921853CD900B69AA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3406BDAC21853CD900B69AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3406BDAC21853CD900B69AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
 		3406BDAE21853CDA00B69AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3406BDB121853CDA00B69AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3406BDB321853CDA00B69AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3406BDB92185407400B69AA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C97AF5DBFFD4CDC0B3F2593 /* Pods-HomeDrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeDrive.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeDrive/Pods-HomeDrive.release.xcconfig"; sourceTree = "<group>"; };
+		AA78AB672185786B0074FA11 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E3BA9FBDF98252DB4CFA10C5 /* Pods_HomeDrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeDrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,6 +64,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		21C439DC21856A1D00AE1F6D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3406BDA921853CD900B69AA8 /* ViewController.swift */,
+				21C439DD21856A8700AE1F6D /* OwnerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		21C439E12185701C00AE1F6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21C439DA218569FD00AE1F6D /* BookingCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3406BD9B21853CD800B69AA8 = {
 			isa = PBXGroup;
 			children = (
@@ -72,13 +102,18 @@
 		3406BDA621853CD800B69AA8 /* HomeDrive */ = {
 			isa = PBXGroup;
 			children = (
+				21C439E12185701C00AE1F6D /* Views */,
+				21C439DC21856A1D00AE1F6D /* View Controllers */,
 				3406BDA721853CD900B69AA8 /* AppDelegate.swift */,
-				3406BDA921853CD900B69AA8 /* ViewController.swift */,
-				3406BDAB21853CD900B69AA8 /* Main.storyboard */,
+				3406BDAB21853CD900B69AA8 /* Owner.storyboard */,
+				0D1E78C721854DA200BAC0DE /* DriverViewController.swift */,
+				0D1E78CB2185536400BAC0DE /* ParkingCell.swift */,
+				3406BDAB21853CD900B69AA8 /* Map.storyboard */,
 				3406BDAE21853CDA00B69AA8 /* Assets.xcassets */,
 				3406BDB021853CDA00B69AA8 /* LaunchScreen.storyboard */,
 				3406BDB321853CDA00B69AA8 /* Info.plist */,
 				3406BDB92185407400B69AA8 /* GoogleService-Info.plist */,
+				AA78AB672185786B0074FA11 /* Main.storyboard */,
 			);
 			path = HomeDrive;
 			sourceTree = "<group>";
@@ -153,9 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3406BDB221853CDA00B69AA8 /* LaunchScreen.storyboard in Resources */,
+				21C439E021856ADE00AE1F6D /* Main.storyboard in Resources */,
 				3406BDBA2185407400B69AA8 /* GoogleService-Info.plist in Resources */,
 				3406BDAF21853CDA00B69AA8 /* Assets.xcassets in Resources */,
-				3406BDAD21853CD900B69AA8 /* Main.storyboard in Resources */,
+				3406BDAD21853CD900B69AA8 /* Owner.storyboard in Resources */,
+				AA78AB682185786B0074FA11 /* Main.storyboard in Resources */,
+				3406BDAD21853CD900B69AA8 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +208,12 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -183,11 +223,13 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		60C34BB74062893BFC6D26C8 /* [CP] Check Pods Manifest.lock */ = {
@@ -220,7 +262,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -247,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeDrive/Pods-HomeDrive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -257,20 +299,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3406BDAA21853CD900B69AA8 /* ViewController.swift in Sources */,
+				0D1E78C821854DA200BAC0DE /* DriverViewController.swift in Sources */,
 				3406BDA821853CD900B69AA8 /* AppDelegate.swift in Sources */,
+				21C439DE21856A8700AE1F6D /* OwnerViewController.swift in Sources */,
+				21C439DB218569FD00AE1F6D /* BookingCell.swift in Sources */,
+				0D1E78CC2185536400BAC0DE /* ParkingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3406BDAB21853CD900B69AA8 /* Main.storyboard */ = {
+		3406BDAB21853CD900B69AA8 /* Owner.storyboard */ = {
+		3406BDAB21853CD900B69AA8 /* Map.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3406BDAC21853CD900B69AA8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Owner.storyboard;
+			name = Map.storyboard;
 			sourceTree = "<group>";
 		};
 		3406BDB021853CDA00B69AA8 /* LaunchScreen.storyboard */ = {
