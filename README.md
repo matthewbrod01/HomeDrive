@@ -5,6 +5,7 @@
 **Motive** A daily frustration of New York drivers is having difficulty finding parking spaces.
 
 ## Video Walkthrough
+This project was created for HackAttack 2018, at Queens College. The following demonstrates what we were able to accomplish in 24 hours:
 
 ![Walkthru](DemoHack2.gif)
 
